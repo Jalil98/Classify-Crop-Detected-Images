@@ -1,8 +1,21 @@
 # Classify-Crop-Detected-Images
-Model dibuat menggunakan domain computer vision dengan algoritma Yolov8. Hasil akhir dari pelatihan model mendapatkan mAP=54%, Recall=60%, Precission=40%
+Model dibuat menggunakan domain computer vision dengan algoritma Yolov8. Hasil akhir dari pelatihan model mendapatkan mAP=54%, Recall=60%, Precission=40% dengan [dataset](https://app.roboflow.com/palm-trees-counting/apple-classify-rppex/2) sebanyak 39 gambar buah apel(apel merah, apel kuning, apel hijau).
 
 ------------------------------
+**Notes:**
+
+Requirements:
+
+    1. python==3.9
+    2. Run with colab/jupyter notebook
+    3. windows
+    4. !pip install roboflow
+    5. !pip install ultralytics
+    6. !pip install opencv-python
+------------------------------
+
 **1. Data Akuisisi**
+
 Dataset yang digunakan terdiri dari 39 gambar buah apel, yang mencakup tiga jenis warna: merah, kuning, dan hijau. Masing-masing jenis warna memiliki 10 gambar yang berbeda.
 
 Proses pelabelan dilakukan menggunakan Roboflow, dengan menetapkan 3 kelas bounding box, yaitu:
